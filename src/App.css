@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 93vh;
+  display: flex;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://res.cloudinary.com/dyktfxjer/image/upload/v1698519838/w2jz8maxuah0niq6k5fl.jpg');
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.canSinTareas{
+  display: none;
+}
+
+.canTareas{
+  display: block;
+}
+
+/*TaskItem*/
+
+.terminado{
+  text-decoration: line-through !important;
+}
+
+.incompleto{
+  text-decoration: none;
+}
+
+.botonEliminar{
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.botonEliminar:hover{
+  border-color: red;
+}
+
+.tareaCointainer{
+  background-color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 15px;
+  margin: 10px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+/*TaskForm*/
+
+.tituloForm{
+  background-color: white;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  margin: 2rem;
+  text-shadow: 2px 2px 5px grey;
+  font-size: 25px;
+}
+
+.tituloForm h2{
+  border: 2px solid black;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  margin: 1rem;
+}
+
+.inputAgregar{
+  background-color: white;
+  width: 50%;
+  margin-bottom: 100px
+}
+
+.botonAgregar{
+  margin-top: 10px;
+  background-color: rgb(171, 171, 171);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*TaskList*/
+
+.listaContainer{
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
