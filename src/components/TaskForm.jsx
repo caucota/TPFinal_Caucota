@@ -32,11 +32,7 @@ const TaskForm = ({ agregarTarea }) => {
                     onChange={handleInputChange}
                     className='inputAgregar'
                 />
-                <button className='botonAgregar' type='submit' onKeyDown={e => {
-                    if (e.key === 13) {
-                        handleOnSubmit();
-                    }
-                }} >Agregar Tarea</button>
+                <button className='botonAgregar' type='submit' onClick={handleOnSubmit}>Agregar Tarea</button>
             </form>
         </div>
     )

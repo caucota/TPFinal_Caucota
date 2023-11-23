@@ -5,7 +5,6 @@ import TaskForm from './components/TaskForm';
 
 function App() {
   const [tareas, setTareas] = useState([]);
-  const [completada, setCompletada] = useState(false);
   const [total, setTotal] = useState(0)
 
   useEffect(() => {
@@ -23,7 +22,7 @@ function App() {
     if (!corrobarRepetidas) {
       const nuevaTarea = {
         nombre: tareaNombre,
-        completado: completada
+        completado: false
       };
       setTareas([...tareas, nuevaTarea]);
     }
