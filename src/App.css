@@ -22,7 +22,7 @@
   left: 0;
   background-image: url('https://res.cloudinary.com/dyktfxjer/image/upload/v1698519838/w2jz8maxuah0niq6k5fl.jpg');
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -89,6 +89,7 @@
 
 .botonAgregar{
   margin-top: 10px;
+  margin-bottom: 20px;
   background-color: rgb(171, 171, 171);
 }
 
@@ -106,4 +107,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.tituloLista{
+  text-decoration: underline;
 }

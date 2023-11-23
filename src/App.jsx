@@ -47,7 +47,7 @@ function App() {
         eliminarTarea={eliminarTarea}
         checkTarea={checkTarea}
       />
-      <h6 className={tareas.length === 0 ? 'canSinTareas' : 'canTareas'} >Tareas Pendientes: {total}</h6>
+      <h3 className={tareas.length === 0 ? 'canSinTareas' : 'canTareas'} >Tareas Pendientes: {total}</h3>
     </div>
   )
 }

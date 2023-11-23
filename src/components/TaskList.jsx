@@ -4,7 +4,7 @@ import TaskItem from './TaskItem';
 const TaskList = ({ tareas, eliminarTarea, checkTarea }) => {
     return (
         <div>
-            <h2>Lista de Tareas</h2>
+            <h2 className='tituloLista'>Lista de Tareas</h2>
             {
                 tareas.length === 0 ?
                     <h4>Sin Tareas Pendientes</h4>
