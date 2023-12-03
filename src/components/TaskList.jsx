@@ -1,7 +1,9 @@
 import React from 'react';
-import TaskItem from './TaskItem';
+import Card from './Card';
 
-const TaskList = ({ tareas, eliminarTarea, checkTarea }) => {
+
+
+const TaskList = ({ tareas, eliminarTarea, checkTarea, checkAll }) => {
     return (
         <div>
             <h2 className='tituloLista'>Lista de Tareas</h2>
@@ -11,14 +13,16 @@ const TaskList = ({ tareas, eliminarTarea, checkTarea }) => {
                     :
                     <ul className='listaContainer'>
                         {
-                            tareas.map((tarea, index) => (
-                                <TaskItem
-                                    key={index}
+                                tareas.map((tarea) => (
+                                <Card 
+                                    id={'Card'+tarea.id}
+                                    key={'Card'+tarea.id}
                                     tarea={tarea}
                                     eliminarTarea={eliminarTarea}
                                     checkTarea={checkTarea}
-                                />
-                            ))
+                                    checkAll={checkAll}
+                                    />
+                                    ))
                         }
                     </ul>
             }

@@ -26,11 +26,11 @@
   z-index: -1;
 }
 
-.canSinTareas{
+.cantSinTareas{
   display: none;
 }
 
-.canTareas{
+.cantTareas{
   display: block;
 }
 
@@ -53,7 +53,7 @@
   border-color: red;
 }
 
-.tareaCointainer{
+.tareaContainer{
   background-color: white;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 15px;
@@ -70,7 +70,7 @@
 .tituloForm{
   background-color: white;
   padding: 0.2rem 2rem 0.2rem 2rem;
-  margin: 2rem;
+  margin: 2rem 20rem 2rem 20rem;
   text-shadow: 2px 2px 5px grey;
   font-size: 25px;
 }
@@ -91,6 +91,22 @@
   margin-top: 10px;
   margin-bottom: 20px;
   background-color: rgb(171, 171, 171);
+}
+
+.botonEliminarTodo{
+  margin-top: 20px;
+  background-color: rgb(192, 149, 149);
+}
+
+.botonCompletarTodo{
+  margin: 20px;
+  background-color: rgb(166, 207, 161);
+}
+
+.botonCompletarTodo:disabled, .botonEliminarTodo:disabled{
+  background:  #fff;
+  color: #ccc;
+  cursor: no-drop;
 }
 
 .form{
